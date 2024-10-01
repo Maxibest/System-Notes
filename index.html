@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Note Taking App</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="container">
+        <div id="list-header">
+            <div id="addNoteDiv" onclick="popup()">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="blankDiv"></div>
+            <div class="blankDiv"></div>
+            <div id="popaintContainer">
+                <i class='bx bxs-palette' id="paintIcon"></i>
+                <div class="paint">
+                    <p>Choisissez une couleur de votre arrière plan 🎨:</p>
+                    <div class="content-color">
+                        <div class="yellow" onclick="changeBackground('yellow')"></div>
+                        <div class="red" onclick="changeBackground('red')"></div>
+                        <div class="green" onclick="changeBackground('green')"></div>
+                        <div class="purple" onclick="changeBackground('purple')"></div>
+                        <div class="pink" onclick="changeBackground('pink')"></div>
+                        <div class="black" onclick="changeBackground('black')"></div>
+                        <div class="default" onclick="changeBackground('white')"></div>
+                    </div>
+                    <button onclick="closePaint()">Fermer</button>
+                </div>
+            </div>
+        </div>
+        <div id="list-container">
+            <ul id="notes-list"></ul>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
